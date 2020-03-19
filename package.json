@@ -1,25 +1,55 @@
 {
-  "name": "react-native-wheel-picker",
-  "version": "1.2.0",
-  "description": "React native cross platform picker.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "react-native-wheel-picker@1.2.0",
+      "/Users/developer7/Desktop/wePro/wePro"
+    ]
+  ],
+  "_from": "react-native-wheel-picker@1.2.0",
+  "_id": "react-native-wheel-picker@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-BQPjezMmhWckUBZ5vfVpfg3SR6Y=",
+  "_location": "/react-native-wheel-picker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-wheel-picker@1.2.0",
+    "name": "react-native-wheel-picker",
+    "escapedName": "react-native-wheel-picker",
+    "rawSpec": "1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "1.2.0"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-wheel-picker/-/react-native-wheel-picker-1.2.0.tgz",
+  "_spec": "1.2.0",
+  "_where": "/Users/developer7/Desktop/wePro/wePro",
+  "author": {
+    "name": "Yu Zheng"
+  },
+  "bugs": {
+    "url": "https://github.com/lesliesam/react-native-wheel-picker/issues"
+  },
+  "dependencies": {},
+  "description": "React native cross platform picker.",
+  "homepage": "https://github.com/lesliesam/react-native-wheel-picker#readme",
+  "keywords": [
+    "react-native",
+    "picker",
+    "wheel"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "react-native-wheel-picker",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lesliesam/react-native-wheel-picker.git"
   },
-  "keywords": [
-    "react-native",
-    "picker",
-	"wheel"
-  ],
-  "author": "Yu Zheng",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lesliesam/react-native-wheel-picker/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/lesliesam/react-native-wheel-picker#readme",
-  "dependencies": {}
+  "version": "1.2.0"
 }

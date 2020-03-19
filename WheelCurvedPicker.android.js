@@ -8,6 +8,8 @@ import {
 	requireNativeComponent,
 } from 'react-native';
 
+const defaultItemStyle = { color: 'white', fontSize: 26 };
+
 const WheelCurvedPickerNativeInterface = {
 	name: 'WheelCurvedPicker',
 	propTypes: {
@@ -16,7 +18,7 @@ const WheelCurvedPickerNativeInterface = {
 		textColor: ColorPropType,
 		textSize: PropTypes.number,
 		itemStyle: PropTypes.object,
-		itemSpace: PropTypes.number,
+		itemSpace:PropTypes.number,
 		onValueChange: PropTypes.func,
 		selectedValue: PropTypes.any,
 		selectedIndex: PropTypes.number,
@@ -26,7 +28,27 @@ const WheelCurvedPickerNativeInterface = {
 const WheelCurvedPickerNative = requireNativeComponent('WheelCurvedPicker', WheelCurvedPickerNativeInterface);
 
 class WheelCurvedPicker extends React.Component {
-	
+
+	static propTypes= {
+		...View.propTypes,
+
+		data: PropTypes.array,
+
+		textColor: ColorPropType,
+
+		textSize: PropTypes.number,
+
+		itemStyle: PropTypes.object,
+
+		itemSpace: PropTypes.number,
+
+		onValueChange: PropTypes.func,
+
+		selectedValue: PropTypes.any,
+
+		selectedIndex: PropTypes.number,
+	}
+
 	constructor(props){
 		super(props)
 		this.state = this._stateFromProps(props)
@@ -75,6 +97,10 @@ class WheelCurvedPicker extends React.Component {
 }
 
 class Item extends React.Component {
+	static propTypes= {
+		value: PropTypes.any, // string or integer basically
+		label: PropTypes.string,
+	}
 
 	render () {
 		// These items don't get rendered directly.
